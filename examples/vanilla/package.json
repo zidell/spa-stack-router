@@ -1,0 +1,12 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite"
+	},
+	"dependencies": {
+		"spa-stack-router": "file:../..",
+		"vite": "latest"
+	},
+	"devDependencies": {}
+}

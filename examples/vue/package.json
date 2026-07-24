@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite"
+	},
+	"dependencies": {
+		"@vitejs/plugin-vue": "latest",
+		"spa-stack-router": "file:../..",
+		"vite": "latest",
+		"vue": "latest"
+	},
+	"devDependencies": {}
+}

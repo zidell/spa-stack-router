@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite"
+	},
+	"dependencies": {
+		"@sveltejs/vite-plugin-svelte": "latest",
+		"spa-stack-router": "file:../..",
+		"svelte": "latest",
+		"vite": "latest"
+	},
+	"devDependencies": {}
+}

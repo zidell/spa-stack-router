@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite"
+	},
+	"dependencies": {
+		"@vitejs/plugin-react": "latest",
+		"spa-stack-router": "file:../..",
+		"vite": "latest",
+		"react": "latest",
+		"react-dom": "latest"
+	},
+	"devDependencies": {}
+}

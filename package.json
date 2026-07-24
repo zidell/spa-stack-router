@@ -1,0 +1,49 @@
+{
+	"name": "spa-stack-router",
+	"version": "0.1.0",
+	"description": "A tiny stack-based router for SPAs that models app-like screen pushes and pops.",
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"license": "MIT",
+	"author": "",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zidell/spa-stack-router.git"
+	},
+	"bugs": {
+		"url": "https://github.com/zidell/spa-stack-router/issues"
+	},
+	"homepage": "https://github.com/zidell/spa-stack-router#readme",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		}
+	},
+	"files": [
+		"dist",
+		"assets",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"clean": "rm -rf dist",
+		"prebuild": "npm run clean",
+		"build": "tsc -p tsconfig.json",
+		"check": "tsc -p tsconfig.json --noEmit",
+		"demo:dev": "vite --config demo/vite.config.js --host 0.0.0.0",
+		"demo:build": "npm run build && vite build --config demo/vite.config.js && cp demo-dist/index.html demo-dist/404.html",
+		"demo:preview": "vite preview --config demo/vite.config.js --host 0.0.0.0",
+		"test": "vitest run --coverage",
+		"prepublishOnly": "npm run check && npm test && npm run build"
+	},
+	"devDependencies": {
+		"@vitest/coverage-v8": "^3.2.4",
+		"jsdom": "^26.1.0",
+		"typescript": "^6.0.3",
+		"vite": "^7.0.6",
+		"vitest": "^3.2.4"
+	}
+}
