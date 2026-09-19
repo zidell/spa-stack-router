@@ -1,6 +1,9 @@
 # spa-stack-router
 
+[![npm version](https://img.shields.io/npm/v/spa-stack-router.svg)](https://www.npmjs.com/package/spa-stack-router)
+[![CI](https://github.com/zidell/spa-stack-router/actions/workflows/pages.yml/badge.svg)](https://github.com/zidell/spa-stack-router/actions/workflows/pages.yml)
 [![Codecov](https://codecov.io/gh/zidell/spa-stack-router/graph/badge.svg)](https://codecov.io/gh/zidell/spa-stack-router)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A tiny framework-agnostic stack router for SPAs.
 
