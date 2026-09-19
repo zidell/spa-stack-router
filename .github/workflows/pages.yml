@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -27,6 +29,13 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          files: coverage/lcov.info
+          fail_ci_if_error: true
       - run: GITHUB_PAGES=true npm run demo:build
       - uses: actions/upload-pages-artifact@v3
         with:

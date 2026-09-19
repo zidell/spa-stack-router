@@ -23,6 +23,14 @@ a {
 	font: inherit;
 }
 
+.github-mark {
+	display: block;
+	width: 19px;
+	height: 19px;
+	flex: 0 0 19px;
+	filter: invert(1);
+}
+
 .phone-shell {
 	display: grid;
 	grid-template-columns: minmax(320px, 430px) minmax(280px, 420px);
@@ -102,8 +110,33 @@ a {
 }
 
 .icon-link {
-	font-size: 12px;
+	border-color: #24292f;
+	background: #24292f;
+	color: #ffffff;
+}
+
+.source-link {
+	position: fixed;
+	top: 24px;
+	right: 24px;
+	z-index: 10;
+	display: inline-flex;
+	gap: 9px;
+	align-items: center;
+	padding: 11px 14px;
+	border: 1px solid #24292f;
+	border-radius: 8px;
+	background: #24292f;
+	box-shadow: 0 8px 24px rgba(31, 42, 54, 0.2);
+	color: #ffffff;
+	font-size: 13px;
 	font-weight: 800;
+	text-decoration: none;
+}
+
+.source-link:hover {
+	border-color: #3b434b;
+	background: #3b434b;
 }
 
 .screen-stage {
@@ -403,6 +436,11 @@ a {
 }
 
 @media (max-width: 900px) {
+	.source-link {
+		top: 18px;
+		right: 18px;
+	}
+
 	.phone-shell {
 		grid-template-columns: minmax(320px, 430px);
 		padding: 14px;
@@ -414,7 +452,17 @@ a {
 	}
 }
 
-@media (max-width: 460px) {
+@media (max-width: 600px) {
+	.source-link {
+		top: 12px;
+		right: 12px;
+		padding: 10px;
+	}
+
+	.source-link span {
+		display: none;
+	}
+
 	.phone-shell {
 		display: block;
 		padding: 0;

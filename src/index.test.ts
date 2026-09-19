@@ -202,6 +202,11 @@ describe('createStackRouter', () => {
 		router.init({ exposeGlobal: 'appRoutes' });
 
 		expect((window as unknown as { appRoutes: unknown }).appRoutes).toBe(router);
+
+		const defaultRouter = makeRouter({ mode: 'hashbang' });
+		defaultRouter.init({ exposeGlobal: true });
+
+		expect((window as unknown as { routes: unknown }).routes).toBe(defaultRouter);
 	});
 
 	it('pops on Escape and removes listeners on destroy', () => {

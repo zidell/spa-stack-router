@@ -1,5 +1,7 @@
 # spa-stack-router
 
+[![Codecov](https://codecov.io/gh/zidell/spa-stack-router/graph/badge.svg)](https://codecov.io/gh/zidell/spa-stack-router)
+
 A tiny framework-agnostic stack router for SPAs.
 
 [Live demo](https://zidell.github.io/spa-stack-router/)

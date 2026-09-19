@@ -1,4 +1,5 @@
 import { createStackRouter } from 'spa-stack-router';
+import githubMarkUrl from './assets/github-mark.svg';
 import './styles.css';
 
 const router = createStackRouter({ basePath: import.meta.env.BASE_URL, delimiter: '.' });
@@ -34,6 +35,8 @@ const lists = {
 
 const lorem =
 	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.';
+
+const githubMark = '<img class="github-mark" src="' + githubMarkUrl + '" alt="" />';
 
 function tabFromStack(stack) {
 	const first = stack[0]?.screen;
@@ -202,7 +205,7 @@ function renderApp(stack, screens, leavingScreens = []) {
 						<p>spa-stack-router</p>
 						<h1>${title}</h1>
 					</div>
-					<a class="icon-link" href="https://github.com/zidell/spa-stack-router" aria-label="GitHub">GH</a>
+					<a class="icon-link" href="https://github.com/zidell/spa-stack-router" target="_blank" rel="noreferrer" aria-label="View source on GitHub">${githubMark}</a>
 				</header>
 
 				<div class="screen-stage">
@@ -230,6 +233,10 @@ function renderApp(stack, screens, leavingScreens = []) {
 
 			${renderDebug(stack)}
 		</main>
+		<a class="source-link" href="https://github.com/zidell/spa-stack-router" target="_blank" rel="noreferrer">
+			${githubMark}
+			<span>GitHub에서 소스 보기</span>
+		</a>
 	`;
 }
 
