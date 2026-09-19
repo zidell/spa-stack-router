@@ -9,6 +9,8 @@
 
 A tiny framework-agnostic stack router for SPAs.
 
+Building a web app often means reconciling its routes with browser navigation: Back and Forward, as well as edge-swipe navigation on a phone. When they disagree, the experience stops feeling like an app. `spa-stack-router` keeps a screen stack in the URL—using hashes or the History API—so browser navigation and your app's routes move together.
+
 [Live demo](https://zidell.github.io/spa-stack-router/)
 
 ![spa-stack-router demo](assets/demo.gif)

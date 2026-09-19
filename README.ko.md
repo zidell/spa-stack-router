@@ -9,6 +9,8 @@
 
 프레임워크에 종속되지 않는 작은 SPA 스택 라우터입니다.
 
+웹 앱을 만들다 보면 앱의 라우팅과 브라우저 내비게이션, 즉 뒤로/앞으로 가기와 휴대폰의 엣지 스와이프 동작을 맞춰야 합니다. 둘이 어긋나면 앱다운 경험이 깨집니다. `spa-stack-router`는 해시 또는 History API를 사용해 화면 스택을 URL에 저장함으로써 브라우저 내비게이션과 앱의 라우팅이 함께 움직이게 합니다.
+
 [라이브 데모](https://zidell.github.io/spa-stack-router/)
 
 ![spa-stack-router 데모](assets/demo.gif)
