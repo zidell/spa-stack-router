@@ -15,6 +15,8 @@
 
 ![spa-stack-router 데모](assets/demo.gif)
 
+[typing.zidell.me](https://typing.zidell.me)와 [note.gitools.net](https://note.gitools.net)에서 실제로 사용하며 검증하고 있습니다.
+
 ## 설치
 
 ```sh

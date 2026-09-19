@@ -15,6 +15,8 @@ Push a child screen, pop back, replace the current screen, or switch to another 
 
 ![spa-stack-router demo](assets/demo.gif)
 
+Used and validated in production at [typing.zidell.me](https://typing.zidell.me) and [note.gitools.net](https://note.gitools.net).
+
 ## Install
 
 ```sh
