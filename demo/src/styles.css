@@ -85,8 +85,7 @@ a {
 	letter-spacing: 0;
 }
 
-.icon-button,
-.icon-link {
+.icon-button {
 	display: grid;
 	place-items: center;
 	width: 44px;
@@ -107,12 +106,6 @@ a {
 .icon-button:disabled {
 	color: #aab4bc;
 	cursor: default;
-}
-
-.icon-link {
-	border-color: #24292f;
-	background: #24292f;
-	color: #ffffff;
 }
 
 .source-link {
@@ -254,8 +247,7 @@ a {
 .row-button:hover,
 .detail-actions button:hover,
 .tab:hover,
-.icon-button:not(:disabled):hover,
-.icon-link:hover {
+.icon-button:not(:disabled):hover {
 	border-color: #1b7b6f;
 	background: #eef8f5;
 }

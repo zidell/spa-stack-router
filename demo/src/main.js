@@ -205,7 +205,7 @@ function renderApp(stack, screens, leavingScreens = []) {
 						<p>spa-stack-router</p>
 						<h1>${title}</h1>
 					</div>
-					<a class="icon-link" href="https://github.com/zidell/spa-stack-router" target="_blank" rel="noreferrer" aria-label="View source on GitHub">${githubMark}</a>
+					<span aria-hidden="true"></span>
 				</header>
 
 				<div class="screen-stage">
