@@ -7,19 +7,13 @@
 [![Codecov](https://codecov.io/gh/zidell/spa-stack-router/graph/badge.svg)](https://codecov.io/gh/zidell/spa-stack-router)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-프레임워크에 종속되지 않는 작은 SPA 스택 라우터입니다.
+프레임워크에 종속되지 않는 작은 SPA 스택 라우터입니다. 웹 앱에서는 앱의 라우팅과 브라우저 내비게이션, 즉 뒤로/앞으로 가기와 휴대폰의 엣지 스와이프 동작을 맞춰야 합니다. 둘이 어긋나면 앱다운 경험이 깨집니다. `spa-stack-router`는 해시 또는 History API를 사용해 앱 같은 화면 스택을 URL에 저장함으로써 브라우저 내비게이션과 앱의 라우팅이 함께 움직이게 합니다.
 
-웹 앱을 만들다 보면 앱의 라우팅과 브라우저 내비게이션, 즉 뒤로/앞으로 가기와 휴대폰의 엣지 스와이프 동작을 맞춰야 합니다. 둘이 어긋나면 앱다운 경험이 깨집니다. `spa-stack-router`는 해시 또는 History API를 사용해 화면 스택을 URL에 저장함으로써 브라우저 내비게이션과 앱의 라우팅이 함께 움직이게 합니다.
+하위 화면을 push하고, 이전 화면으로 pop하며, 현재 화면을 교체하거나 다른 루트 스택으로 전환할 수 있습니다. 새로고침, 링크 공유, 브라우저 뒤로 가기도 자연스럽게 동작합니다. 프레임워크 전용 라우터 없이 목록 → 상세 → 모달 같은 앱 스타일의 화면 계층을 URL에 반영할 때 사용하세요. 이 라이브러리는 UI를 렌더링하지 않으며 React, Vue, Svelte 등 어떤 프레임워크에도 의존하지 않습니다.
 
 [라이브 데모](https://zidell.github.io/spa-stack-router/)
 
 ![spa-stack-router 데모](assets/demo.gif)
-
-`spa-stack-router`는 네이티브 앱처럼 화면 이동을 모델링합니다. 하위 화면을 push하고, 이전 화면으로 pop하며, 현재 화면을 교체하거나 다른 루트 스택으로 전환할 수 있습니다. 스택은 URL에 저장되므로 새로고침, 링크 공유, 브라우저 뒤로 가기도 자연스럽게 동작합니다.
-
-목록 → 상세 → 모달처럼 앱 같은 화면 계층이 있고, 프레임워크 전용 라우터 없이 그 계층을 URL에 반영하고 싶을 때 사용하세요.
-
-이 라이브러리는 UI를 렌더링하지 않으며 React, Vue 등 어떤 프레임워크에도 의존하지 않습니다. npm에서 가져와 스택 변경을 구독하고, 앱의 상태 모델에 연결하면 됩니다.
 
 ## 설치
 

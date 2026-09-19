@@ -7,19 +7,13 @@
 [![Codecov](https://codecov.io/gh/zidell/spa-stack-router/graph/badge.svg)](https://codecov.io/gh/zidell/spa-stack-router)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A tiny framework-agnostic stack router for SPAs.
+A tiny framework-agnostic stack router for SPAs. Web apps need to reconcile their routes with browser navigation—Back and Forward, as well as edge-swipe navigation on a phone. When they disagree, the experience stops feeling like an app. `spa-stack-router` keeps an app-like screen stack in the URL, using hashes or the History API, so browser navigation and your app's routes move together.
 
-Building a web app often means reconciling its routes with browser navigation: Back and Forward, as well as edge-swipe navigation on a phone. When they disagree, the experience stops feeling like an app. `spa-stack-router` keeps a screen stack in the URL—using hashes or the History API—so browser navigation and your app's routes move together.
+Push a child screen, pop back, replace the current screen, or switch to another root stack. Refreshes, shared links, and browser Back continue to work. Use it for app-like screen layers such as list -> detail -> modal without adopting a framework-specific router. It renders no UI and has no dependency on React, Vue, Svelte, or any other framework.
 
 [Live demo](https://zidell.github.io/spa-stack-router/)
 
 ![spa-stack-router demo](assets/demo.gif)
-
-`spa-stack-router` models navigation like a native app: push a child screen, pop back to the previous screen, replace the current screen, or switch to another root stack. The stack is stored in the URL, so refresh, sharing, and the browser Back button keep working.
-
-Use it when your SPA has app-like screen layers such as list -> detail -> modal, and you want those layers reflected in the URL without adopting a framework-specific router.
-
-It does not render UI and it does not depend on React, Vue, Svelte, or any other framework. Import it from npm, subscribe to stack changes, and connect the stack to your own state model.
 
 ## Install
 
